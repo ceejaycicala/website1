@@ -1,0 +1,109 @@
+.loader {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    background: #131311;
+    overflow: hidden;
+    user-select: none;
+}
+
+/* Rising fill */
+.loader-fill {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 0%;
+    background: #e8e6df;
+    overflow: hidden;
+    transition: height 0.12s ease-out;
+}
+
+.loader-fill.sweeping {
+    transition: height 0.75s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+/* Number */
+#loader-num {
+    position: absolute;
+    bottom: 36px;
+    right: var(--spacing-page);
+    font-family: var(--font-primary);
+    font-size: clamp(100px, 18vw, 240px);
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    line-height: 0.9;
+    color: #fff;
+    mix-blend-mode: difference;
+    display: flex;
+}
+
+/* Individual digits */
+.loader-digit {
+    display: inline-block;
+}
+
+.loader-digit.changing {
+    animation: digitIn 0.22s ease forwards;
+}
+
+.loader-digit.exit {
+    animation: digitOut 0.28s ease forwards;
+}
+
+@keyframes digitIn {
+    from {
+        opacity: 0;
+        filter: blur(10px);
+        transform: translateY(-16px);
+    }
+
+    to {
+        opacity: 1;
+        filter: blur(0);
+        transform: translateY(0);
+    }
+}
+
+@keyframes digitOut {
+    from {
+        opacity: 1;
+        filter: blur(0);
+        transform: translateY(0);
+    }
+
+    to {
+        opacity: 0;
+        filter: blur(10px);
+        transform: translateY(20px);
+    }
+}
+
+/* Logo */
+.loader-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 120px;
+    pointer-events: none;
+    user-select: none;
+    mix-blend-mode: difference;
+    z-index: 10;
+}
+
+.loader-logo svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.loader-logo path {
+    fill: #fff;
+}
+
+/* Upward mask reveal */
+.loader.revealing {
+    transform: translateY(-100%);
+    transition: transform 0.9s cubic-bezier(0.76, 0, 0.24, 1);
+}

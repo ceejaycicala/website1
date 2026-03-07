@@ -1,0 +1,117 @@
+/* Page content */
+.content {
+    margin-top: 100px;
+    padding: var(--spacing-page);
+    display: flex;
+    flex-direction: column;
+    gap: 600px;
+    color: var(--color-muted);
+    font-size: 14px;
+}
+
+/* Hero */
+.hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 var(--spacing-page);
+    overflow: hidden;
+    background: var(--color-bg);
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.hero-text h1 {
+    font-size: clamp(52px, 10vw, 140px);
+    font-weight: 700;
+    color: var(--color-text);
+    line-height: 1.0;
+    letter-spacing: -0.03em;
+}
+
+.hero-sub {
+    font-size: clamp(13px, 1.2vw, 16px);
+    color: var(--color-muted);
+    font-weight: 400;
+    line-height: 1.7;
+}
+
+/* Hero bottom bar */
+.hero-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+    /*   border-top: 1px solid var(--color-subtle); */
+}
+
+.hero-clock {
+    position: absolute;
+    top: 20px;
+    left: var(--spacing-page);
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--color-muted);
+    letter-spacing: 0.12em;
+    font-variant-numeric: tabular-nums;
+}
+
+.hero-coord {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.08em;
+    color: var(--color-muted);
+    user-select: none;
+}
+
+.hero-scroll {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--color-muted);
+    user-select: none;
+}
+
+.hero-availability {
+    position: absolute;
+    top: 24px;
+    right: 200px;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    color: var(--color-muted);
+}
+
+.hero-nav {
+    position: absolute;
+    top: 16px;
+    right: var(--spacing-page);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 4px;
+}
+
+.hero-nav a {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--color-mid);
+    text-decoration: none;
+    letter-spacing: -0.3px;
+    transition: color var(--transition-fast);
+}
+
+.hero-nav a:hover {
+    color: var(--color-text);
+}

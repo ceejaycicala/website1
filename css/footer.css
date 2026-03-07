@@ -1,0 +1,167 @@
+/* ── Footer ── */
+/* .footer {
+  position: relative;
+  background: #1a1a1a;
+  overflow: hidden;
+  padding: 48px 40px 0;
+  margin-top: 200px;
+}
+
+.footer-top {
+  margin-bottom: 48px;
+}
+
+.footer-acknowledgement {
+  color: var(--color-text);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.7;
+  max-width: 420px;
+  opacity: 0.85;
+}
+
+.footer-meta {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  color: var(--color-muted);
+  margin-bottom: 24px;
+}
+
+.footer-copy {
+  flex: 0 0 auto;
+}
+
+.footer-legal {
+  flex: 1;
+  text-align: center;
+  cursor: pointer;
+  transition: color var(--transition-fast);
+}
+
+.footer-time {
+  flex: 0 0 auto;
+  font-variant-numeric: tabular-nums;
+} */
+
+/* Stacked wordmark */
+/* .footer-wordmark {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  line-height: 0.85;
+  user-select: none;
+  pointer-events: none;
+}
+
+.wordmark-back,
+.wordmark-front {
+  display: block;
+  font-size: clamp(80px, 14vw, 200px);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.wordmark-front {
+  color: #fff;
+} */
+
+/* Footer upper */
+.footer-upper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    padding: 64px var(--spacing-page) 64px;
+    border-bottom: 1px solid var(--color-subtle);
+}
+
+.footer-tagline p {
+    font-size: clamp(18px, 2vw, 24px);
+    font-weight: 700;
+    color: var(--color-text);
+    line-height: 1.35;
+    margin-bottom: 48px;
+}
+
+.footer-contact-block {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-contact-label {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--color-text);
+    letter-spacing: 0.02em;
+    margin-bottom: 4px;
+}
+
+.footer-contact-block a,
+.footer-contact-block span {
+    font-size: 13px;
+    color: #666;
+    text-decoration: none;
+    line-height: 1.6;
+    transition: color var(--transition-fast);
+}
+
+.footer-contact-block a:hover {
+    color: var(--color-text);
+}
+
+.footer-col-label {
+    display: block;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--color-muted);
+    letter-spacing: 0.05em;
+    margin-bottom: 20px;
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.footer-nav a {
+    font-size: clamp(28px, 4vw, 52px);
+    font-weight: 700;
+    color: var(--color-text);
+    text-decoration: none;
+    line-height: 1.15;
+    transition: opacity var(--transition-fast);
+}
+
+.footer-nav a:hover {
+    opacity: 0.5;
+}
+
+.footer-connect {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-connect a {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--color-mid);
+    text-decoration: none;
+    transition: color var(--transition-fast);
+}
+
+.footer-connect a:hover {
+    color: var(--color-text);
+}
+
+/* Footer lower */
+.footer-lower {
+    padding: 48px var(--spacing-page) 0;
+}
